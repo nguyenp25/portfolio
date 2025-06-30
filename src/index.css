@@ -1,0 +1,27 @@
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.leftHeader {
+    display:flex;
+}
+
+.itemContainer {
+    margin-left: 40px;
+}
+
+.intro {
+    display: flex;
+}
+
+.intro .right .wrapper {
+    flex-direction: column;
+}
+/* 
+.rightHeader {
+    justify-content: flex-end;
+} */
