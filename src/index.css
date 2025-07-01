@@ -2,7 +2,9 @@
 * {
     font-family: 'Noto Sans JP', sans-serif;
     color: #1868ae;
-    font-size: 30px;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .wrapper {
@@ -31,16 +33,22 @@
 
 .intro {
     display: flex;
+    min-height: 600px;
 }
 
 .intro .leftIntro {
     display: flex;
     justify-content: center;
     width: 50%;
+
+}
+
+.leftHeader div {
+    font-size: 30px;
 }
 
 .leftIntro img {
-    width: 400px;
+    /* width: 400px; */
 }
 
 .intro .rightIntro {
@@ -49,6 +57,24 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+    padding: 0px 0px 0px 40px;
+}
+
+.waveOne {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(150px);
+    
+}
+
+.desc {
+    font-size: 16px;
+    color: #000000;
+}
+
+.typeWriter {
+    font-size: 6rem;
+    color: #000000;
 }
 
 /* .rightIntro {
