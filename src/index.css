@@ -1,13 +1,28 @@
 
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #1868ae;
+    font-size: 30px;
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
+    /* align-items: center; */
+    padding: 10px 30px;   
 }
 
 .leftHeader {
     display:flex;
+    justify-content: center;
+}
+
+.git {
+    margin-top: 7px;
+}
+
+.linkedIn {
+    margin-top: 5.5px;
 }
 
 .itemContainer {
@@ -18,10 +33,24 @@
     display: flex;
 }
 
-.intro .right .wrapper {
-    flex-direction: column;
+.intro .leftIntro {
+    display: flex;
+    justify-content: center;
+    width: 50%;
 }
-/* 
-.rightHeader {
-    justify-content: flex-end;
+
+.leftIntro img {
+    width: 400px;
+}
+
+.intro .rightIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+/* .rightIntro {
+    margin: 0 auto;
 } */
