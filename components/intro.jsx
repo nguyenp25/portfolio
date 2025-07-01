@@ -15,6 +15,7 @@ export default function Intro(){
             </div>  
         </div>
         <img className="waveOne" src="../images/wave1.svg" />
+        <h1 className="portfolio">Portfolio</h1>
         </>
     )
 }
