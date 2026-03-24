@@ -22,12 +22,23 @@
     justify-content: space-between;
     /* align-items: center; */
     padding: 10px 30px;   
-    
+    transition-timing-function: ease-in;
+
 }
 
 .leftHeader {
     display:flex;
     justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.initials.active div{
+    color: #ffffff;
+    min-height: 51px;
+    transition: 1s;
 }
 
 .leftHeader .initials {
@@ -38,8 +49,16 @@
     margin-top: 7px;
 }
 
+.git.active {
+    display: none;
+}
+
 .linkedIn {
     margin-top: 5.5px;
+}
+
+.linkedIn.active {
+    display: none;
 }
 
 .itemContainer {
@@ -81,14 +100,20 @@
     transform: translateY(150px); 
 }
 
+.waveThree {
+    position: relative;
+    top: 10px;
+}
+
 .waveFour {
     position: absolute;
-    
 }
 
 .desc {
     font-size: 16px;
+    font-weight: 400;
     color: #000000;
+    width: 500px;
 }
 
 .typeWriter {
@@ -105,11 +130,13 @@
 }
 
 .portfolio {
-    margin: 170px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     background-color: #1868ae;
+    position: relative;
+    z-index: 998;
 }
 
-.portfolio, .projectTitle, .projectName, .projectDesc {
+.portfolio, .projectTitle, .projectDesc, .techStack {
     color: #ffffff;
 }
 
@@ -163,7 +190,7 @@
     padding: 15px;
     border-radius: 25px;
     font-weight: 400;
-    line-height: 2;
+    line-height: 2; 
 }
 
 .Hobbies {
@@ -187,3 +214,143 @@
     color: #000000;
     text-align: center;
 }
+
+.contactContainer {
+    background-color: #1868ae;
+    
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9f0fa;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.formContainer label {
+    color: #ffffff;
+}
+
+.contactContainer h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.wrapper.active {
+    background-color: #1868ae;
+    transition: 1s;
+}
+
+.wrapper.inactive {
+    background-color: #ffffff;
+    transition: 1s;
+}
+
+.offScreenMenu li{
+    list-style-type: none;
+    color:#ffffff;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.offScreenMenu li:hover{
+    font-weight: 500;
+}
+
+.offScreenMenu {
+    background-color: #1868ae;
+    padding: 100px 50px 50px 50px;
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    z-index: 998;
+}
+
+.offScreenMenu.active {
+    transform: translateX(-450px);
+    transition: 1s;
+}
+
+.offScreenMenu.inactive {
+    transform: translateX(450px);
+    transition: 2s;
+}
+
+nav { 
+    /* padding: 1rem; */
+    display: flex;
+    background-color: #ffffff;
+    height: 30px;
+}
+
+nav.active {
+    background-color: #1868ae;
+    transition: 1s;
+}
+
+nav.inactive {
+    background-color: #ffffff;
+    transition: 1s;
+}
+
+.hamBurger {
+    height: 33px;
+    width: 30px;
+    margin-left: auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 8px 0px 0px 0px;
+    z-index: 999;
+}
+
+.hamBurger span {
+    height: 3px;
+    width: 100%;
+    background-color: #1868ae;
+}
+
+.lineOne, .lineThree {
+    transform:rotate(0deg);
+    transition: 1.5s;
+    transform-origin: left center;
+}
+
+.lineOne.active, .lineThree.active {
+    background-color: #ffffff;
+    transition: 1.5s;
+    z-index: 999;
+}
+
+.lineOne.active{
+    transform-origin: left center;
+    transform: rotate(45deg);
+    transition: 1.5s;
+}
+
+.lineThree.active{
+    transform-origin: left center;
+    transform: rotate(-45deg);
+    transition: 1.5s;
+}
+
+.lineTwo.active{
+    visibility: hidden;
+    transition: 1s;
+}
+
+
+/* 
+#portfolio {
+    scroll-margin-top: 1000px;
+} */

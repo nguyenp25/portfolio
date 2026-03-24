@@ -3,6 +3,7 @@ import React from "react";
 export default function AboutMe(){
     return(
         <>
+        <section id="about"></section>
         <img className="waveFour" src="../images/wave4.svg" />
         <div className="aboutMeContainer">
             <div className="aboutMe">
